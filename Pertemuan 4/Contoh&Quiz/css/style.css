@@ -1,0 +1,133 @@
+body{
+    font-family: georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #366da3;
+    color: white;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+#hero {
+    background-color: #29aad9;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.foto-profil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 15px;
+}
+
+main {
+    width: 85%;
+    margin: 30px auto;
+}
+
+main section {
+    margin-bottom: 40px;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 220px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.kontak-list {
+    list-style: none;
+    padding: 0;
+}
+.kontak-list li {
+    margin-bottom: 8px;
+}
+.kontak-list a {
+    color: #006699;
+    text-decoration: none;
+}
+.kontak-list a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #29aad9;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2e7d32; 
+    color: white;
+}
+
+footer {
+    background-color: #366da3;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    border-top: 2px solid #fffff333;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+    }
+    #hero h2 {
+        font-size: 20px;
+    }
+    header nav a {
+        display: block;
+        margin: 8px 0;
+    }
+}
