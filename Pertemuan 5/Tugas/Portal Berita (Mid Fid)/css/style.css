@@ -1,0 +1,197 @@
+/* PENGATURAN DASAR */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* KOTAK PLACEHOLDER GAMBAR (KHUSUS WIREFRAME) */
+.img-box {
+    background-color: #e0e0e0;
+    border: 2px dashed #999999;
+    text-align: center;
+    color: #666666;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box.large {
+    height: 250px;
+    width: 100%;
+}
+
+.img-box.small {
+    width: 120px;
+    height: 90px;
+    float: left;
+    margin-right: 15px;
+}
+
+.img-box.banner {
+    height: 200px;
+    width: 100%;
+}
+
+/* HEADER */
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.search-box {
+    float: right;
+    margin-top: 5px;
+}
+
+.search-box input {
+    padding: 5px;
+    border: 1px solid #cccccc;
+}
+
+.search-box button {
+    padding: 5px 10px;
+    background-color: #dddddd;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+}
+
+/* NAVBAR */
+.nav-bar {
+    background-color: #555555;
+    padding: 10px 0;
+}
+
+.nav-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.nav-bar a.aktif {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* LAYOUT UTAMA (MENGGUNAKAN FLOAT SEDERHANA) */
+.main-content {
+    margin-top: 20px;
+    overflow: hidden; /* Penyeimbang float */
+    padding-bottom: 30px;
+}
+
+.content-left {
+    width: 65%;
+    float: left;
+}
+
+.content-right {
+    width: 30%;
+    float: right;
+}
+
+/* KARTU & KONTEN BERITA */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.card-desc {
+    margin-top: 15px;
+}
+
+.tag {
+    background-color: #dddddd;
+    font-size: 10px;
+    padding: 3px 6px;
+    font-weight: bold;
+}
+
+h2, h3, h4 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 13px;
+    color: #555555;
+    line-height: 1.4;
+}
+
+small {
+    color: #777777;
+    font-size: 11px;
+}
+
+/* DAFTAR BERITA KECIL */
+.list-news {
+    overflow: hidden; /* Supaya float gambar aman di dalam card */
+}
+
+.list-desc {
+    overflow: hidden;
+}
+
+/* SIDEBAR / WIDGET */
+.widget {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.widget h4 {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 8px;
+}
+
+.widget ul {
+    padding-left: 15px;
+    margin: 0;
+}
+
+.widget li {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.widget a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.widget a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 12px;
+    clear: both;
+}
