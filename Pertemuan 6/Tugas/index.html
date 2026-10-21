@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sayGo - Olahan Sayuran Segar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <a href="#beranda" class="brand">
+          <span class="logo" aria-hidden="true">🥬</span>
+          <span class="brand-name">sayGo</span>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#fasilitas">Fasilitas</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- HEAD BANNER -->
+      <section id="beranda" class="head-banner">
+        <div class="container banner-layout">
+          <div class="banner-text">
+            <p class="badge">100% nabati, dimasak setiap pagi</p>
+            <h1>Sayur itu enak, kalau diolah dengan benar.</h1>
+            <p class="lead">
+              sayGo mengubah sayuran lokal dari petani sekitar menjadi hidangan
+              yang mengenyangkan: dari bakwan jagung sampai rendang jamur.
+            </p>
+            <div class="banner-action">
+              <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+              <a href="#kontak" class="btn btn-secondary">Pesan Sekarang</a>
+            </div>
+          </div>
+          <div class="banner-visual" aria-hidden="true">
+            <div class="bowl">
+              <img class="bowl-photo" src="images/hero.jpg" alt="" onerror="this.remove()" />
+            </div>
+            <p class="stamp">Dari kebun,<br />langsung ke piring</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- AREA KONTEN UTAMA -->
+      <section class="content" id="menu">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Menu andalan sayGo</h2>
+            <p>Enam olahan sayuran yang paling sering dipesan pelanggan kami.</p>
+          </div>
+
+          <div class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-thumb t-green">
+                <img src="images/brokoli.webp" alt="Brokoli crispy saus lemon" loading="lazy" onerror="this.remove()" /></div>
+              <div class="menu-body">
+                <span class="tag tag-success">Vegan</span>
+                <h3>Brokoli Crispy Saus Lemon</h3>
+                <p>Brokoli goreng tepung renyah dengan saus lemon madu yang segar.</p>
+                <p class="price">Rp 24.000</p>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-thumb t-orange">
+                <img src="images/salad.jpg" alt="Salad wortel jeruk" loading="lazy" onerror="this.remove()" /></div>
+              <div class="menu-body">
+                <span class="tag tag-warning">Baru</span>
+                <h3>Salad Wortel Jeruk</h3>
+                <p>Wortel serut, jeruk, dan kacang panggang dengan dressing wijen.</p>
+                <p class="price">Rp 22.000</p>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-thumb t-purple">
+                <img src="images/terong.webp" alt="Terong balado bakar" loading="lazy" onerror="this.remove()" /></div>
+              <div class="menu-body">
+                <span class="tag tag-danger">Pedas</span>
+                <h3>Terong Balado Bakar</h3>
+                <p>Terong dibakar lalu disiram sambal balado, cocok dengan nasi hangat.</p>
+                <p class="price">Rp 20.000</p>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-thumb t-yellow">
+                <img src="images/bakwan.jpg" alt="Bakwan jagung sayur" loading="lazy" onerror="this.remove()" /></div>
+              <div class="menu-body">
+                <span class="tag tag-success">Vegan</span>
+                <h3>Bakwan Jagung Sayur</h3>
+                <p>Jagung manis, kol, dan wortel digoreng garing, disajikan lima potong.</p>
+                <p class="price">Rp 15.000</p>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-thumb t-brown">
+                <img src="images/rendang.jpg" alt="Rendang jamur tiram" loading="lazy" onerror="this.remove()" /></div>
+              <div class="menu-body">
+                <span class="tag tag-success">Vegan</span>
+                <h3>Rendang Jamur Tiram</h3>
+                <p>Jamur tiram dimasak dengan bumbu rendang sampai meresap dan gurih.</p>
+                <p class="price">Rp 28.000</p>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-thumb t-leaf">
+                <img src="images/gado.jpg" alt="Gado-gado sayGo" loading="lazy" onerror="this.remove()" /></div>
+              <div class="menu-body">
+                <span class="tag tag-success">Vegan</span>
+                <h3>Gado-Gado sayGo</h3>
+                <p>Sayur rebus segar dengan tahu, tempe, dan saus kacang buatan sendiri.</p>
+                <p class="price">Rp 26.000</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FASILITAS -->
+      <section id="fasilitas" class="section-fasilitas">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Tempat makan yang adem dan hijau</h2>
+            <p>Datang sendiri, bareng keluarga, atau rapat kecil sambil makan siang. Semua nyaman di sayGo.</p>
+          </div>
+          <div class="facility-grid">
+            <article class="facility facility-big">
+              <span class="facility-icon" aria-hidden="true"> <class="taman" img src="images/taman.jpg" alt="Taman Kebun Mini" /></span>
+              <h3>Taman Kebun Mini</h3>
+              <class="kiw">Area makan semi-terbuka dikelilingi tanaman hidup. Beberapa sayuran di sini kami petik langsung untuk dapur.</class>
+            </article>
+            <article class="facility">
+              <span class="facility-icon" aria-hidden="true"><img src="images/kiten.png" alt="Open Kitchen" width="56" height="56" class="facility-icon" /></span>
+              <h3>Open Kitchen</h3>
+              <p>Lihat sendiri sayurmu dimasak, tanpa ada yang disembunyikan.</p>
+            </article>
+            <article class="facility">
+              <span class="facility-icon" aria-hidden="true"><img src="images/wifi.jpg" alt="Wi-Fi Cepat" width="56" height="56" class="facility-icon" /></span>
+              <h3>Wi-Fi Cepat</h3>
+              <p>Gratis untuk pengunjung, lengkap dengan colokan di tiap meja.</p>
+            </article>
+            <article class="facility">
+              <span class="facility-icon" aria-hidden="true"><img src="images/famili.jpg" alt="Ruang Keluarga" width="56" height="56" class="facility-icon" /></span>
+              <h3>Ruang Keluarga</h3>
+              <p>Meja panjang dan kursi anak untuk makan bersama.</p>
+            </article>
+            <article class="facility">
+              <span class="facility-icon" aria-hidden="true"><img src="images/parkir.jpg" alt="Parkir Luas" width="56" height="56" class="facility-icon" /></span>
+              <h3>Parkir Luas</h3>
+              <p>Muat motor dan mobil, dijaga sampai kamu selesai makan.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- LAYANAN -->
+      <section id="layanan" class="section-layanan">
+        <div class="container layanan-layout">
+          <div class="layanan-intro">
+            <h2>Makan di mana saja, tetap segar</h2>
+            <p>Pilih cara menikmati sayGo yang paling pas dengan harimu.</p>
+          </div>
+          <ul class="layanan-list">
+            <li class="layanan-item">
+              <span class="layanan-icon" aria-hidden="true"><img src="images/makan.jpg" alt="Makan di Tempat" width="56" height="56" class="layanan-icon" /></span>
+              <div>
+                <h3>Makan di Tempat</h3>
+                <p>Pesan lewat kasir atau scan QR di meja, makanan diantar ke tempatmu.</p>
+              </div>
+              <span class="tag tag-success">Tanpa antre</span>
+            </li>
+            <li class="layanan-item">
+              <span class="layanan-icon" aria-hidden="true"><img src="images/pulang.jpg" alt="Bawa Pulang" width="56" height="56" class="layanan-icon" /></span>
+              <div>
+                <h3>Bawa Pulang</h3>
+                <p>Dikemas dalam wadah ramah lingkungan, siap dibawa ke kantor atau rumah.</p>
+              </div>
+              <span class="tag tag-warning">Wadah kompos</span>
+            </li>
+            <li class="layanan-item">
+              <span class="layanan-icon" aria-hidden="true"><img src="images/antar.jpg" alt="Antar ke Rumah" width="56" height="56" class="layanan-icon" /></span>
+              <div>
+                <h3>Antar ke Rumah</h3>
+                <p>Pengantaran dalam radius 5 km, gratis ongkir untuk pesanan di atas Rp 50.000.</p>
+              </div>
+              <span class="tag tag-success">Gratis ongkir</span>
+            </li>
+            <li class="layanan-item">
+              <span class="layanan-icon" aria-hidden="true"><img src="images/ketering.jpg" alt="Katering & Pesanan Besar" width="56" height="56" class="layanan-icon" /></span>
+              <div>
+                <h3>Katering &amp; Pesanan Besar</h3>
+                <p>Nasi box dan prasmanan sayur untuk arisan, rapat, dan acara kantor, minimal 20 porsi.</p>
+              </div>
+              <span class="tag tag-danger">Pesan H-2</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="kontak">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-brand">sayGo</p>
+          <p>Olahan sayuran segar untuk hari-harimu.</p>
+        </div>
+        <address>
+          <p>Jl. Kebun Hijau No. 12, Jakarta</p>
+          <p>0812-3456-7890</p>
+          <p>saygoooo@saygo.id</p>
+          <p>Buka setiap hari, 10.00 - 21.00</p>
+        </address>
+      </div>
+      <p class="copyright">&copy; 2026 sayGo. Hak cipta dilindungi.</p>
+    </footer>
+  </body>
+</html>
