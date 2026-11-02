@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesan Makanan - sayGo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="brand">
+          <span class="logo" aria-hidden="true">🥬</span>
+          <span class="brand-name">sayGo</span>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html#beranda">Beranda</a></li>
+          <li><a href="index.html#fasilitas">Fasilitas</a></li>
+          <li><a href="index.html#layanan">Layanan</a></li>
+          <li><a href="index.html#kontak">Kontak</a></li>
+          <li><a href="pesan-makanan.html" class="nav-cta">Pesan Makanan</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="order-page">
+      <div class="container">
+        <section class="form-card">
+          <h1>Pesan Makanan</h1>
+          <p class="description">
+            Isi form berikut untuk memesan menu makanan di restoran sayGo.
+          </p>
+
+          <!--
+            Method GET dipakai seperti pada form pencarian,
+            data dikirim lewat URL.
+          -->
+          <form action="hasil-pemesanan.html" method="get">
+
+            <!-- Input Text -->
+            <div class="form-group">
+              <label for="nama">Nama Pelanggan</label>
+              <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required />
+            </div>
+
+            <!-- Input Email -->
+            <div class="form-group">
+              <label for="email">Email Pelanggan</label>
+              <input type="email" id="email" name="email" placeholder="contoh@email.com" required />
+            </div>
+
+            <!-- Input Telepon -->
+            <div class="form-group">
+              <label for="telepon">Nomor Telepon</label>
+              <input type="tel" id="telepon" name="telepon" placeholder="08123456789" required />
+            </div>
+
+            <!-- Input Text Menu -->
+            <div class="form-group">
+              <label for="menu">Menu yang Dipesan</label>
+              <input type="text" id="menu" name="menu" placeholder="Contoh: Salad Wortel Jeruk, Gado-Gado sayGo" required />
+            </div>
+
+            <!-- Input Tambahan: Tanggal -->
+            <div class="form-group">
+              <label for="tanggal">Tanggal Pemesanan</label>
+              <input type="date" id="tanggal" name="tanggal" required />
+            </div>
+
+            <!-- Input Text Jenis Pesanan -->
+            <div class="form-group">
+              <label for="jenis">Jenis Pesanan</label>
+              <input type="text" id="jenis" name="jenis" placeholder="Makan di Tempat / Takeaway" required />
+            </div>
+
+            <!-- Textarea Catatan -->
+            <div class="form-group">
+              <label for="catatan">Catatan untuk Pelanggan</label>
+              <textarea id="catatan" name="catatan" rows="4" placeholder="Contoh: tidak pakai kacang, sambal dipisah"></textarea>
+            </div>
+
+            <!-- Button -->
+            <div class="button-group">
+              <button type="submit" class="btn btn-primary">Pesan Sekarang</button>
+              <button type="reset" class="btn btn-reset">Reset</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="kontak">
+      <p class="copyright" style="border-top: 0; margin-top: 0">&copy; 2026 sayGo. Hak cipta dilindungi.</p>
+    </footer>
+  </body>
+</html>

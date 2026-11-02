@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Lamaran Kerja - Web Developer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Form Formulation Lamaran Kerja</h2>
+    <p class="subtitle">Posisi: Web Developer (Pembuat Website)</p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+      
+      <!-- Input Text: Nama Pelamar -->
+      <div class="form-group">
+        <label for="nama">Nama Lengkap <span class="required">*</span></label>
+        <input type="text" id="nama" name="nama" required minlength="3" placeholder="Masukkan nama lengkap Anda">
+      </div>
+
+      <!-- Input Email -->
+      <div class="form-group">
+        <label for="email">Alamat Email <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required placeholder="contoh: nama@email.com">
+      </div>
+
+      <!-- Input Number: Umur -->
+      <div class="form-group">
+        <label for="umur">Umur (Tahun) <span class="required">*</span></label>
+        <input type="number" id="umur" name="umur" min="18" max="60" required placeholder="Minimal 18 tahun">
+      </div>
+
+      <!-- Select: Tingkat Pengalaman Kerja -->
+      <div class="form-group">
+        <label for="pengalaman">Tingkat Pengalaman Kerja <span class="required">*</span></label>
+        <select id="pengalaman" name="pengalaman" required>
+          <option value="">-- Pilih Tingkat Pengalaman --</option>
+          <option value="fresh-graduate">Fresh Graduate / Tanpa Pengalaman</option>
+          <option value="junior">Junior (1 - 2 Tahun)</option>
+          <option value="middle">Middle (3 - 5 Tahun)</option>
+          <option value="senior">Senior (> 5 Tahun)</option>
+        </select>
+      </div>
+
+      <!-- Radio Button: Ketersediaan Jam Kerja / Tipe Kerja -->
+      <div class="form-group">
+        <label>Tipe Pekerjaan yang Diminati <span class="required">*</span></label>
+        <div class="radio-group">
+          <label><input type="radio" name="tipe_kerja" value="fulltime" required> Full-Time</label>
+          <label><input type="radio" name="tipe_kerja" value="parttime" required> Part-Time</label>
+          <label><input type="radio" name="tipe_kerja" value="freelance" required> Freelance / Kontrak</label>
+        </div>
+      </div>
+
+      <!-- Checkbox: Keahlian / Skill Pembuatan Website -->
+      <div class="form-group">
+        <label>Keahlian Web Development <span class="required">*</span></label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="skill[]" value="html-css"> HTML5, CSS3, & Responsive Design</label>
+          <label><input type="checkbox" name="skill[]" value="javascript"> JavaScript / React / Vue</label>
+          <label><input type="checkbox" name="skill[]" value="backend"> Backend (PHP / Laravel / Node.js)</label>
+          <label><input type="checkbox" name="skill[]" value="database"> Database (MySQL / PostgreSQL / MongoDB)</label>
+        </div>
+      </div>
+
+      <!-- Textarea: Ringkasan Pengalaman & Link Portofolio -->
+      <div class="form-group">
+        <label for="deskripsi">Ringkasan Pengalaman & Link Portofolio <span class="required">*</span></label>
+        <textarea id="deskripsi" name="deskripsi" rows="4" required minlength="20" placeholder="Ceritakan pengalaman pembuatan website yang pernah dibuat dan cantumkan link GitHub/Portofolio Anda (minimal 20 karakter)..."></textarea>
+      </div>
+
+      <!-- Upload File: CV / Resume -->
+      <div class="form-group">
+        <label for="cv">Upload CV / Resume Terbaru (.pdf) <span class="required">*</span></label>
+        <input type="file" id="cv" name="cv" accept=".pdf" required>
+      </div>
+
+      <!-- Checkbox: Konfirmasi Kebenaran Data -->
+      <div class="form-group checkbox-single">
+        <label>
+          <input type="checkbox" name="konfirmasi" id="konfirmasi" required>
+          Saya menyatakan bahwa data yang diisi adalah benar dan dapat dipertanggungjawabkan. <span class="required">*</span>
+        </label>
+      </div>
+
+      <!-- Tombol Aksi -->
+      <div class="button-group">
+        <button type="submit" class="btn-submit">Kirim Lamaran</button>
+        <button type="reset" class="btn-reset">Reset Form</button>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
