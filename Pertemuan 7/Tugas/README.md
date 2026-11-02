@@ -22,3 +22,7 @@ Form memiliki 5 aturan validasi utama di sisi client:
 3. **Batasan Umur Kerja (`min="18"` & `max="60"`)**: Memastikan usia pelamar memenuhi syarat kerja (18 hingga 60 tahun).
 4. **Panjang Minimal Teks (`minlength="20"`)**: Deskripsi pengalaman pada textarea harus berisi minimal 20 karakter agar informasi memadai.
 5. **Pembatasan Format Berkas (`accept=".pdf"`)**: Membatasi unggahan file CV agar hanya menerima dokumen berformat `.pdf`.
+
+    ![Tampilan Website](../Tugas/images/desktop.png)
+  
+    ![Tampilan Mobile](../Tugas/images/mobile.png)
