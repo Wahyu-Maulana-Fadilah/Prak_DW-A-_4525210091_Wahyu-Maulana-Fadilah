@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pendaftaran Kursus Pemrograman</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Form Pendaftaran Kursus</h2>
+    <p class="subtitle">Silakan isi formulir di bawah ini dengan data yang valid untuk mendaftar kursus.</p>
+
+    <!-- Atribut enctype="multipart/form-data" wajib ada untuk upload file -->
+    <form action="#" method="post" enctype="multipart/form-data">
+      
+      <!-- Input Text: Nama Lengkap -->
+      <div class="form-group">
+        <label for="nama">Nama Lengkap <span class="required">*</span></label>
+        <input type="text" id="nama" name="nama" required minlength="3" placeholder="Masukkan nama lengkap Anda">
+      </div>
+
+      <!-- Input Email -->
+      <div class="form-group">
+        <label for="email">Alamat Email <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required placeholder="contoh: email@domain.com">
+      </div>
+
+      <!-- Input Number: Umur -->
+      <div class="form-group">
+        <label for="umur">Umur (Tahun) <span class="required">*</span></label>
+        <input type="number" id="umur" name="umur" min="15" max="50" required placeholder="Minimal 15 tahun">
+      </div>
+
+      <!-- Select Box: Pilihan Paket Kursus -->
+      <div class="form-group">
+        <label for="kursus">Pilihan Paket Kursus <span class="required">*</span></label>
+        <select id="kursus" name="kursus" required>
+          <option value="">-- Pilih Paket Kursus --</option>
+          <option value="frontend">Frontend Web Development</option>
+          <option value="backend">Backend Web Development</option>
+          <option value="fullstack">Fullstack Web Development</option>
+        </select>
+      </div>
+
+      <!-- Radio Button: Metode Belajar -->
+      <div class="form-group">
+        <label>Metode Belajar <span class="required">*</span></label>
+        <div class="radio-group">
+          <label><input type="radio" name="metode" value="online" required> Kelas Online (Daring)</label>
+          <label><input type="radio" name="metode" value="offline" required> Kelas Offline (Tatap Muka)</label>
+        </div>
+      </div>
+
+      <!-- Checkbox: Fasilitas Tambahan -->
+      <div class="form-group">
+        <label>Fasilitas Tambahan / Modul Opsional</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="fasilitas[]" value="sertifikat"> Sertifikat Resmi Cetak</label>
+          <label><input type="checkbox" name="fasilitas[]" value="mentoring"> Sesi Mentoring 1-on-1</label>
+          <label><input type="checkbox" name="fasilitas[]" value="modul"> Buku Modul Cetak Eksklusif</label>
+        </div>
+      </div>
+
+      <!-- Textarea: Alasan Mengambil Kursus -->
+      <div class="form-group">
+        <label for="alasan">Alasan Mengambil Kursus <span class="required">*</span></label>
+        <textarea id="alasan" name="alasan" rows="4" required minlength="20" placeholder="Jelaskan alasan atau latar belakang Anda mengambil kursus ini (minimal 20 karakter)..."></textarea>
+      </div>
+
+      <!-- Upload File: Bukti Pembayaran -->
+      <div class="form-group">
+        <label for="pembayaran">Upload Bukti Pembayaran (.jpg, .png, .pdf) <span class="required">*</span></label>
+        <input type="file" id="pembayaran" name="pembayaran" accept=".jpg,.jpeg,.png,.pdf" required>
+      </div>
+
+      <!-- Checkbox: Persetujuan Syarat Ketentuan -->
+      <div class="form-group checkbox-single">
+        <label>
+          <input type="checkbox" name="persetujuan" required>
+          Saya menyatakan data yang diisi sudah benar dan mematuhi aturan kursus. <span class="required">*</span>
+        </label>
+      </div>
+
+      <!-- 3 Jenis Tombol (Submit, Reset, Button Netral) -->
+      <div class="button-group">
+        <button type="submit" class="btn-submit">Kirim Pendaftaran</button>
+        <button type="reset" class="btn-reset">Reset Form</button>
+        <button type="button" class="btn-info" onclick="alert('Silakan hubungi Admin jika butuh bantuan.')">Bantuan Info</button>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
