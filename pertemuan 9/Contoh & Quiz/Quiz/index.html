@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+       content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Relawan</title>
+  <!-- Bootstrap 5.3.8 -->
+  <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+     rel="stylesheet">
+  <!-- CSS sendiri -->
+  <link
+     rel="stylesheet"
+     href="css/style.css">
+</head>
+<body class="bg-light">
+  <!-- =========================
+      HEADER
+      ========================= -->
+  <header class="bg-success text-white py-4 shadow-sm">
+     <div class="container">
+        <h1 class="h3 mb-1">
+           Bakti Masyarakat &amp; Gerakan Peduli Lingkungan
+        </h1>
+        <p class="mb-0">
+           Dashboard Relawan untuk memantau jumlah dan data relawan aksi sosial.
+        </p>
+     </div>
+  </header>
+  <!-- =========================
+      MAIN CONTENT
+      ========================= -->
+  <main class="container my-5">
+     <div class="row g-3 mb-4">
+        <div class="col-12 col-md-6 col-lg-3">
+           <div class="card shadow-sm">
+              <div class="card-body">
+                 <p class="text-secondary mb-1">
+                    Total Relawan
+                 </p>
+                 <h3 class="mb-0 ">
+                    128
+                 </h3>
+              </div>
+           </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+           <div class="card shadow-sm">
+              <div class="card-body">
+                 <p class="text-secondary mb-1">
+                    Relawan Aktif
+                 </p>
+                 <h3 class="mb-0 text-success">
+                    96
+                 </h3>
+              </div>
+           </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+           <div class="card shadow-sm">
+              <div class="card-body">
+                 <p class="text-secondary mb-1">
+                    Kegiatan Terlaksana
+                 </p>
+                 <h3 class="mb-0 text-primary">
+                    24
+                 </h3>
+              </div>
+           </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+           <div class="card shadow-sm">
+              <div class="card-body">
+                 <p class="text-secondary mb-1">
+                    Wilayah Terjangkau
+                 </p>
+                 <h3 class="mb-0 text-warning">
+                    12
+                 </h3>
+              </div>
+           </div>
+        </div>
+     </div>
+     <!-- Judul dan tombol -->
+     <div class="row align-items-center mb-4">
+        <div class="col-12 col-md-8">
+           <h2>
+              Daftar Relawan
+           </h2>
+           <p class="text-secondary mb-md-0">
+              Data relawan yang terdaftar pada kegiatan yang sedang berjalan.
+           </p>
+        </div>
+        <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+           <button
+              class="btn btn-success">
+              + Tambah Relawan
+           </button>
+        </div>
+     </div>
+     <!-- =========================
+         TABEL
+         ========================= -->
+     <div class="card shadow-sm">
+        <div class="card-header bg-white py-3">
+           <h3 class="h5 mb-0">
+              Data Relawan
+           </h3>
+        </div>
+        <div class="card-body">
+           <!-- Tabel responsive -->
+           <div class="table-responsive">
+              <table class="table table-striped table-hover align-middle">
+                 <thead class="table-dark">
+                    <tr>
+                       <th>No</th>
+                       <th>Nama</th>
+                       <th>Domisili</th>
+                       <th>Divisi</th>
+                       <th>Status</th>
+                       <th>Aksi</th>
+                    </tr>
+                 </thead>
+                 <tbody>
+                    <tr>
+                       <td>1</td>
+                       <td>Santoso</td>
+                       <td>Bogor</td>
+                       <td>Bersih Sungai</td>
+                       <td>
+                          <span class="badge text-bg-warning">
+                             Menunggu
+                          </span>
+                       </td>
+                       <td>
+                          <button class="btn btn-sm btn-primary">
+                             Detail
+                          </button>
+                       </td>
+                    </tr>
+                    <tr>
+                       <td>2</td>
+                       <td>Saipul</td>
+                       <td>Depok</td>
+                       <td>Penanaman Sawit</td>
+                       <td>
+                          <span class="badge text-bg-warning">
+                             Menunggu
+                          </span>
+                       </td>
+                       <td>
+                          <button class="btn btn-sm btn-primary">
+                             Detail
+                          </button>
+                       </td>
+                    </tr>
+                    <tr>
+                       <td>3</td>
+                       <td>Udin</td>
+                       <td>Bekasi</td>
+                       <td>Membangun Kopdes</td>
+                       <td>
+                          <span class="badge text-bg-success">
+                             Aktif
+                          </span>
+                       </td>
+                       <td>
+                          <button class="btn btn-sm btn-primary">
+                             Detail
+                          </button>
+                       </td>
+                    </tr>
+                    <tr>
+                       <td>4</td>
+                       <td>Budi</td>
+                       <td>Tangerang</td>
+                       <td>Menyiram</td>
+                       <td>
+                          <span class="badge text-bg-success">
+                             Aktif
+                          </span>
+                       </td>
+                       <td>
+                          <button class="btn btn-sm btn-primary">
+                             Detail
+                          </button>
+                       </td>
+                    </tr>
+                    <tr>
+                       <td>5</td>
+                       <td>Agus</td>
+                       <td>Bekasi</td>
+                       <td>Penanaman Sawit</td>
+                       <td>
+                          <span class="badge text-bg-secondary">
+                             Nonaktif
+                          </span>
+                       </td>
+                       <td>
+                          <button class="btn btn-sm btn-primary">
+                             Detail
+                          </button>
+                       </td>
+                    </tr>
+                    <tr>
+                       <td>6</td>
+                       <td>Ibu Budi</td>
+                       <td>Jakarta Pusat</td>
+                       <td>Dokumentasi</td>
+                       <td>
+                          <span class="badge text-bg-warning">
+                             Menunggu
+                          </span>
+                       </td>
+                       <td>
+                          <button class="btn btn-sm btn-primary">
+                             Detail
+                          </button>
+                       </td>
+                    </tr>
+                    <tr>
+                       <td>7</td>
+                       <td>Bapak Budi</td>
+                       <td>Jakarta Selatan</td>
+                       <td>Bersih Sungai</td>
+                       <td>
+                          <span class="badge text-bg-success">
+                             Aktif
+                          </span>
+                       </td>
+                       <td>
+                          <button class="btn btn-sm btn-primary">
+                             Detail
+                          </button>
+                       </td>
+                    </tr>
+                 </tbody>
+              </table>
+           </div>
+        </div>
+     </div>
+  </main>
+  <!-- =========================
+      FOOTER
+      ========================= -->
+  <footer class="bg-dark text-white text-center py-4">
+     <div class="container">
+        <p class="mb-0">
+           &copy; 2026
+           Bakti Masyarakat &amp; Gerakan Peduli Lingkungan
+        </p>
+     </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
