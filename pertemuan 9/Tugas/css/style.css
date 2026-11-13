@@ -1,0 +1,19 @@
+body {
+   min-height: 100vh;
+}
+.card {
+   border: 0;
+}
+/* Kartu statistik: garis aksen di kiri + efek angkat saat hover */
+.stat-card {
+   border-left: 4px solid #0d6efd;
+   transition: transform 0.2s;
+}
+.stat-card:hover {
+   transform: translateY(-4px);
+}
+/* Tabel: teks tidak turun baris, sehingga bisa digeser horizontal di HP */
+table th,
+table td {
+   white-space: nowrap;
+}
